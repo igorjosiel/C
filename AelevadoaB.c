@@ -3,21 +3,23 @@
 
 int main()
 {
-    int a, b, result=1, contador, potencia;
-    //Vari�veis do tipo int
+    int expoente, base, result=1, contador, potencia;
+    //Variáveis do tipo int
     printf("Digite um valor para A: \n");
-    scanf("%d", &a);
+    scanf("%d", &base);
+    //Variável recebendo valor via entrada de dados pelo usuário para ser a base da potenciação
     printf("Digite um valor para B: \n");
-    scanf("%d", &b);
-    //Vari�veis recebendo valores via entrada de dados pelo usu�rio
+    scanf("%d", &expoente);
+    //Variável recebendo valor via entrada de dados pelo usuário para ser o expoente da potenciação
     for (contador=0; contador<b; contador++)
-        //Vari�vel contador recebendo 0, para o contador menor que o valor armazenado na vari�vel b se repete o comando, contador
-        //recebe mais um a cada rodada de repeti��o
+        //Variável contador recebendo 0, para o contador menor que o valor armazenado na variável b se repete o comando, contador
+        //recebe mais um a cada rodada de repetição
     {
          result *= a;
-         //Vari�vel result recebe a multiplica��o do seu valor pelo valor armazenado na vari�vel a enquanto o comando se repetir
+         //Variável result recebe a multiplicação do seu valor pelo valor armazenado na variável a enquanto o comando se repetir
+         //Variável que recebe o valor da potencia
     }
     printf("\n%d elevado ao expoente %d e igual a: %d\n", a, b, result);
-    //Imprime a frase com as respectivas vari�veis
+    //Imprime a frase com as respectivas variáveis
     return 0;
 }
